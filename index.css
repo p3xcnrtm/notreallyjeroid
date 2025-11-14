@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-charcoal-200 dark:border-charcoal-800;
+  }
+  
+  body {
+    @apply bg-ivory-50 dark:bg-charcoal-950 text-charcoal-900 dark:text-ivory-50 font-sans antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(13, 31, 23, 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(13, 31, 23, 0.02) 0%, transparent 50%);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-ivory-100 dark:bg-charcoal-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-deep-green-300 dark:bg-deep-green-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-deep-green-400 dark:bg-deep-green-600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-deep-green-700 hover:bg-deep-green-800 text-ivory-50 px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-matte-gold-500 hover:bg-matte-gold-600 text-charcoal-900 px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline {
+    @apply border-2 border-deep-green-700 dark:border-deep-green-600 text-deep-green-700 dark:text-deep-green-400 hover:bg-deep-green-50 dark:hover:bg-deep-green-950 px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-ivory-50 dark:bg-charcoal-900 border border-charcoal-200 dark:border-charcoal-800 rounded-xl p-6 shadow-lg;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(13, 31, 23, 0.01) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(13, 31, 23, 0.01) 0%, transparent 50%);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-ivory-100 dark:bg-charcoal-800 border border-charcoal-300 dark:border-charcoal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green-500 focus:border-transparent transition-all duration-300 text-charcoal-900 dark:text-ivory-50;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-deep-green-600 to-matte-gold-600 bg-clip-text text-transparent;
+  }
+}
+
