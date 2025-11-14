@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { WalletProvider } from './contexts/WalletContext';
-import { ThemeProvider } from './contexts/ThemeContext';
-import SplashScreen from './screens/SplashScreen';
-import OnboardingScreen from './screens/OnboardingScreen';
-import SeedPhraseCreate from './screens/SeedPhraseCreate';
-import SeedPhraseVerify from './screens/SeedPhraseVerify';
-import Dashboard from './screens/Dashboard';
-import WalletList from './screens/WalletList';
-import SendScreen from './screens/SendScreen';
-import ReceiveScreen from './screens/ReceiveScreen';
-import SwapScreen from './screens/SwapScreen';
-import TransactionHistory from './screens/TransactionHistory';
-import Settings from './screens/Settings';
+import { AuthProvider, useAuth } from './AuthContext';
+import { WalletProvider } from './WalletContext';
+import { ThemeProvider } from './ThemeContext';
+import SplashScreen from './SplashScreen';
+import OnboardingScreen from './OnboardingScreen';
+import SeedPhraseCreate from './SeedPhraseCreate';
+import SeedPhraseVerify from './SeedPhraseVerify';
+import Dashboard from './Dashboard';
+import WalletList from './WalletList';
+import SendScreen from './SendScreen';
+import ReceiveScreen from './ReceiveScreen';
+import SwapScreen from './SwapScreen';
+import TransactionHistory from './TransactionHistory';
+import Settings from './Settings';
 import { Toaster } from 'react-hot-toast';
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
