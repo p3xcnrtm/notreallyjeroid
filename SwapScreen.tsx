@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpDown, AlertTriangle, Zap, TrendingDown } from 'lucide-react';
-import Layout from '@/components/Layout';
-import { useWallet } from '@/contexts/WalletContext';
-import { getChainSymbol } from '@/utils/wallet';
-import { getSwapQuote } from '@/utils/api';
+import Layout from '@/Layout';
+import { useWallet } from '@/WalletContext';
+import { getChainSymbol } from '@/wallet';
+import { getSwapQuote } from '@/api';
 import toast from 'react-hot-toast';
 
 const TOKENS = ['ETH', 'BTC', 'SOL', 'BNB', 'MATIC', 'USDT'];
