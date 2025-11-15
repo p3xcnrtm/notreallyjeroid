@@ -40,7 +40,7 @@ function AppRoutes() {
     return (
       <Routes>
         <Route path="/seed-phrase/create" element={<SeedPhraseCreate />} />
-        <Route path="*" element={<Navigate to="/seed-phrase/create" />} />
+        <Route path="*" element={<Navigate to="/SeedPhraseCreate />} />
       </Routes>
     );
   }
