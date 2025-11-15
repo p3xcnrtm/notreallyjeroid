@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, QrCode, AlertTriangle, Zap } from 'lucide-react';
-import Layout from '@/components/Layout';
-import { useWallet } from '@/contexts/WalletContext';
-import { isValidAddress, formatAddress, getChainSymbol } from '@/utils/wallet';
-import { getGasEstimate, sendTransaction } from '@/utils/api';
-import { getSeedPhrase } from '@/utils/storage';
-import { decryptData } from '@/utils/encryption';
+import Layout from '@/Layout';
+import { useWallet } from '@/WalletContext';
+import { isValidAddress, formatAddress, getChainSymbol } from '@/wallet';
+import { getGasEstimate, sendTransaction } from '@/api';
+import { getSeedPhrase } from '@/storage';
+import { decryptData } from '@/encryption';
 import toast from 'react-hot-toast';
 
 export default function SendScreen() {
