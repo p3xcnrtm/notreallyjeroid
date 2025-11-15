@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Wallet, Send, ArrowDownLeft, ArrowUpRight, Settings, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { useTheme } from '@/contexts/ThemeContext';
+import { useTheme } from '@/ThemeContext';
 import { Moon, Sun } from 'lucide-react';
 
 interface LayoutProps {
