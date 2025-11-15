@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Plus, Trash2, Edit2, Eye, EyeOff, Copy, Check } from 'lucide-react';
-import Layout from '@/components/Layout';
-import { useWallet } from '@/contexts/WalletContext';
-import { formatAddress, getChainName, getChainSymbol } from '@/utils/wallet';
-import { getSeedPhrase } from '@/utils/storage';
-import { decryptData } from '@/utils/encryption';
-import { createWalletForChain, Chain } from '@/utils/wallet';
+import Layout from '@/Layout';
+import { useWallet } from '@/WalletContext';
+import { formatAddress, getChainName, getChainSymbol } from '@/wallet';
+import { getSeedPhrase } from '@/storage';
+import { decryptData } from '@/encryption';
+import { createWalletForChain, Chain } from '@/wallet';
 import toast from 'react-hot-toast';
 
 export default function WalletList() {
