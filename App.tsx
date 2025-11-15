@@ -29,8 +29,8 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<SplashScreen />} />
         <Route path="/onboarding" element={<OnboardingScreen />} />
-        <Route path="/seed-phrase/create" element={<SeedPhraseCreate />} />
-        <Route path="/seed-phrase/verify" element={<SeedPhraseVerify />} />
+        <Route path="/SeedPhraseCreate" element={<SeedPhraseCreate />} />
+        <Route path="/SeedPhraseVerify" element={<SeedPhraseVerify />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     );
@@ -39,7 +39,7 @@ function AppRoutes() {
   if (!seedPhrase) {
     return (
       <Routes>
-        <Route path="/seed-phrase/create" element={<SeedPhraseCreate />} />
+        <Route path="/SeedPhraseCreate" element={<SeedPhraseCreate />} />
         <Route path="*" element={<Navigate to="/SeedPhraseCreate />} />
       </Routes>
     );
