@@ -1,6 +1,6 @@
 // Real-time API endpoints using live blockchain services
 import { ethers } from 'ethers';
-import { Chain } from '@/types';
+import { Chain } from './types';
 
 const COINGECKO_API = 'https://api.coingecko.com/api/v3';
 const ONEINCH_API = import.meta.env.VITE_ONEINCH_API || 'https://api.1inch.dev';
@@ -73,7 +73,7 @@ export async function getTokenPrices(tokens: string[]): Promise<TokenPrice[]> {
 }
 
 import { getRPCUrl as getRPCUrlUtil, getEVMProvider } from './blockchain';
-import { Chain } from '@/types';
+import { Chain } from './types';
 
 async function getRPCUrl(chain: string): Promise<string> {
   return getRPCUrlUtil(chain as Chain);
