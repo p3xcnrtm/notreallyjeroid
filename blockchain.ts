@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import { Chain } from '@/types';
+import { Chain } from './types';
 
 /**
  * Get the appropriate RPC URL for a given chain
