@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowDownLeft, ArrowUpDown, Filter, Copy, Check, ExternalLink } from 'lucide-react';
-import Layout from '@/Layout';
-import { useWallet } from '@/WalletContext';
-import { formatAddress, getChainSymbol } from '@/wallet';
+import Layout from './Layout';
+import { useWallet } from './WalletContext';
+import { formatAddress, getChainSymbol } from './wallet';
 import { format } from 'date-fns';
 import toast from 'react-hot-toast';
 
