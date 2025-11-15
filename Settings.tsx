@@ -14,15 +14,15 @@ import {
   Eye,
   EyeOff,
 } from 'lucide-react';
-import Layout from '@/Layout';
-import { useAuth } from '@/AuthContext';
-import { useTheme } from '@/ThemeContext';
-import { useWallet } from '@/WalletContext';
-import { clearAllData } from '@/storage';
+import Layout from './Layout';
+import { useAuth } from './AuthContext';
+import { useTheme } from './ThemeContext';
+import { useWallet } from './WalletContext';
+import { clearAllData } from './storage';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { Chain } from '@/types';
-import { getChainName } from '@/wallet';
+import { Chain } from './types';
+import { getChainName } from './wallet';
 
 export default function Settings() {
   const { user, logout, isEmailVerified, sendEmailVerification } = useAuth();
