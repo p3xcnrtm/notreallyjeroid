@@ -1,4 +1,4 @@
-import { Wallet, Transaction, PriceAlert, User, SeedPhrase } from '@/types';
+import { Wallet, Transaction, PriceAlert, User, SeedPhrase } from './types';
 import { encryptData, decryptData } from './encryption';
 
 const STORAGE_KEYS = {
