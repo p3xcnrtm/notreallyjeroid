@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Copy, Check, Eye, EyeOff, ArrowRight } from 'lucide-react';
-import { generateMnemonic } from '@/wallet';
-import { saveSeedPhrase } from '@/storage';
-import { encryptData } from '@/encryption';
+import { generateMnemonic } from './wallet';
+import { saveSeedPhrase } from './storage';
+import { encryptData } from './encryption';
 import toast from 'react-hot-toast';
 
 export default function SeedPhraseCreate() {
