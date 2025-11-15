@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
-import { getSeedPhrase } from '@/storage';
-import { decryptData } from '@/encryption';
-import { validateMnemonic } from '@/wallet';
+import { getSeedPhrase } from './storage';
+import { decryptData } from './encryption';
+import { validateMnemonic } from './wallet';
 import toast from 'react-hot-toast';
 
 export default function SeedPhraseVerify() {
