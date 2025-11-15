@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import { Wallet, Transaction, Token } from '@/types';
-import { getWallets, saveWallets, getTransactions, saveTransactions } from '@/storage';
-import { getBalance, getTokenPrices } from '@/api';
-import { getChainSymbol } from '@/wallet';
+import { Wallet, Transaction, Token } from './types';
+import { getWallets, saveWallets, getTransactions, saveTransactions } from './storage';
+import { getBalance, getTokenPrices } from './api';
+import { getChainSymbol } from './wallet';
 
 interface WalletContextType {
   wallets: Wallet[];
