@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowDownLeft, ArrowUpDown, TrendingUp, Wallet, Eye } from 'lucide-react';
-import Layout from '@/components/Layout';
-import { useWallet } from '@/contexts/WalletContext';
-import { formatAddress } from '@/utils/wallet';
+import Layout from '@/Layout';
+import { useWallet } from '@/WalletContext';
+import { formatAddress } from '@/wallet';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { Wallet as WalletType, Token } from '@/types';
 
