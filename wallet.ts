@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import * as bip39 from 'bip39';
-import { Wallet, Chain } from '@/types';
+import { Wallet, Chain } from './types';
 
 export function generateMnemonic(): string {
   return bip39.generateMnemonic(256); // 24 words
