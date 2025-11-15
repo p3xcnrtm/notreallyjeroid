@@ -40,7 +40,7 @@ export default function SeedPhraseCreate() {
     });
 
     toast.success('Seed phrase saved securely');
-    navigate('/seed-phrase/verify');
+    navigate('/SeedPhraseVerify');
   };
 
   return (
