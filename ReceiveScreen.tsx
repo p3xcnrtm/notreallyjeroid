@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Copy, Check, Download, QrCode } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
-import Layout from '@/components/Layout';
-import { useWallet } from '@/contexts/WalletContext';
-import { formatAddress, getChainSymbol } from '@/utils/wallet';
+import Layout from '@/Layout';
+import { useWallet } from '@/WalletContext';
+import { formatAddress, getChainSymbol } from '@/wallet';
 import toast from 'react-hot-toast';
 
 export default function ReceiveScreen() {
