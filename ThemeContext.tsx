@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { getTheme, saveTheme } from '@/utils/storage';
+import { getTheme, saveTheme } from '@/storage';
 
 type Theme = 'light' | 'dark';
 
