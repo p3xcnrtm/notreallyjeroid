@@ -22,7 +22,7 @@ export default function OnboardingScreen() {
     try {
       await login(email);
       toast.success('Logged in successfully');
-      navigate('/seed-phrase/create');
+      navigate('/SeedPhraseCreate');
     } catch (error) {
       toast.error('Login failed. Please try again.');
     } finally {
@@ -40,7 +40,7 @@ export default function OnboardingScreen() {
     try {
       await registerWithPasskey(email);
       toast.success('Passkey registered successfully');
-      navigate('/seed-phrase/create');
+      navigate('/SeedPhraseCreate');
     } catch (error) {
       toast.error('Passkey registration failed');
     } finally {
